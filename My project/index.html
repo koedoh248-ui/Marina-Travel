@@ -22,15 +22,36 @@
 
  
 
-<style> 
+<style>
+body { padding-top: 70px; }
 
-body { padding-top: 70px; } 
+footer {
+  background: #0d6efd;
+  color: #fff;
+  padding: 20px 0;
+}
 
-footer { background:#0d6efd; color:#fff; padding:20px 0; } 
+/* HERO WITH BACKGROUND IMAGE */
+.hero {
+  background: url("images/ship.jpg") center/cover no-repeat;
+  padding: 120px 20px;
+  color: rgb(234, 235, 239);
+  position: relative;
+}
 
-.hero { background:#e9f2ff; padding:60px 20px; } 
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 1, 9, 0.477);
+}
 
-</style> 
+.hero .container {
+  position: relative;
+  z-index: 1;
+}
+</style>
+
 
 </head> 
 
@@ -92,65 +113,58 @@ footer { background:#0d6efd; color:#fff; padding:20px 0; }
 
  
 
-<!-- Services --> 
+<!-- Services Section -->
+<section class="container my-5">
+  <h1 class="text-center mb-5">Our Services</h1>
 
-<section class="container my-5"> 
+  <div class="row g-4">
 
-<div class="row text-center"> 
+    <!-- Island Tours -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/island.jpg" class="card-img-top" alt="Island Tours">
+        <div class="card-body">
+          <h5 class="card-title">Island Tours</h5>
+          <p class="card-text">
+            Guided island tours offering breathtaking tropical views, cultural exploration,
+            and relaxing beach experiences. Perfect for families, couples, and solo travelers.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<h2 class="mb-4">Our Services</h2> 
+    <!-- Cruise Trips -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/cruise.jpg" class="card-img-top" alt="Cruise Trips">
+        <div class="card-body">
+          <h5 class="card-title">Cruise Trips</h5>
+          <p class="card-text">
+            Luxury cruise trips with professional crews, comfortable cabins,
+            onboard dining, and unforgettable ocean journeys.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<div class="col-md-4 mb-3"> 
+    <!-- Diving Experience -->
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="images/diving.jpg" class="card-img-top" alt="Diving Experience">
+        <div class="card-body">
+          <h5 class="card-title">Diving Experiences</h5>
+          <p class="card-text">
+            Safe and guided scuba diving programs led by certified instructors,
+            allowing you to explore vibrant marine life and coral reefs.
+          </p>
+        </div>
+      </div>
+    </div>
 
-<div class="card h-100"> 
+  </div>
+</section>
 
-<div class="card-body"> 
 
-<h5 class="card-title">Island Tours</h5> 
-
-<p class="card-text">Guided tours to beautiful tropical islands.</p> 
-
-</div> 
-
-</div> 
-
-</div> 
-
-<div class="col-md-4 mb-3"> 
-
-<div class="card h-100"> 
-
-<div class="card-body"> 
-
-<h5 class="card-title">Cruise Trips</h5> 
-
-<p class="card-text">Relaxing cruises with premium services.</p> 
-
-</div> 
-
-</div> 
-
-</div> 
-
-<div class="col-md-4 mb-3"> 
-
-<div class="card h-100"> 
-
-<div class="card-body"> 
-
-<h5 class="card-title">Diving Experience</h5> 
-
-<p class="card-text">Explore underwater life with expert instructors.</p> 
-
-</div> 
-
-</div> 
-
-</div> 
-
-</div> 
-
-</section> 
 
  
 
